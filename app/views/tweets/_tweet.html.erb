@@ -7,6 +7,9 @@
       <p><%= tweet.body %></p>
       <footer class="blockquote-footer"><%= tweet.creation_date %></footer>
       <%= link_to 'Ver', tweet, class: 'btn btn-primary' %>
+      <%= button_to 'Destroy', tweet, confirm: 'Are you sure?', :disable_with => 'deleting...', method: :delete, :class => 'btn-mini btn-danger btn' %>
+
     </blockquote>
   </div>
+  
 </div>
